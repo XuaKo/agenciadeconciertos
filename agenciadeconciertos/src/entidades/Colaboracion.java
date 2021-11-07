@@ -5,7 +5,7 @@ import java.time.LocalDate;
 public class Colaboracion extends Concierto {
 
 	protected Colaboracion() {
-		super();
+		
 
 	}
 
