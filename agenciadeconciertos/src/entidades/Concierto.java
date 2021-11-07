@@ -5,7 +5,7 @@ import java.time.LocalDate;
 public class Concierto {
 
 	public Concierto() {
-
+	 super();
 	}
 
 	protected long Identificador;
