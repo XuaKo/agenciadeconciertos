@@ -6,7 +6,6 @@ public class Entrada {
 	private boolean Vip = false;
 
 	public Entrada(long identificador, String precio_Euro, boolean vip) {
-		super();
 		Identificador = identificador;
 		Precio_Euro = precio_Euro;
 		Vip = vip;
