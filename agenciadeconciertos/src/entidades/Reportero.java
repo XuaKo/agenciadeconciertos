@@ -5,6 +5,13 @@ public class Reportero {
 	private String NIF;
 	private int Telefono;
 
+	private Reportero(String nombreyApellidos, String nIF, int telefono) {
+		super();
+		NombreyApellidos = nombreyApellidos;
+		NIF = nIF;
+		Telefono = telefono;
+	}
+
 	public String getNombreyApellidoos() {
 		return NombreyApellidos;
 	}

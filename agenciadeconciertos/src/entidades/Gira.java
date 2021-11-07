@@ -8,6 +8,13 @@ public class Gira {
 	private LocalDate FechaApertura;
 	private LocalDate FechaCierre;
 
+	private Gira(String nombreUnico, LocalDate fechaApertura, LocalDate fechaCierre) {
+		super();
+		NombreUnico = nombreUnico;
+		FechaApertura = fechaApertura;
+		FechaCierre = fechaCierre;
+	}
+
 	public String getNombreUnico() {
 		return NombreUnico;
 	}

@@ -6,6 +6,14 @@ public class Usuario {
 	private long email;
 	private String NIF;
 
+	private Usuario(long identificador, String nombreyApellidos, long email, String nIF) {
+		super();
+		this.identificador = identificador;
+		NombreyApellidos = nombreyApellidos;
+		this.email = email;
+		NIF = nIF;
+	}
+
 	public long getIdentificador() {
 		return identificador;
 	}

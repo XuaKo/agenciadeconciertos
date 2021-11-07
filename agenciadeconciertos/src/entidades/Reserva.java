@@ -6,6 +6,12 @@ public class Reserva {
 	private long identificador;
 	private LocalDate fecha;
 
+	private Reserva(long identificador, LocalDate fecha) {
+		super();
+		this.identificador = identificador;
+		this.fecha = fecha;
+	}
+
 	public long getIdentificador() {
 		return identificador;
 	}

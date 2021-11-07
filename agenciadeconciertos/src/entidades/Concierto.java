@@ -4,8 +4,18 @@ import java.time.LocalDate;
 
 public class Concierto {
 
+	public Concierto() {
+		
+	}
+
 	protected long Identificador;
 	protected LocalDate FechayHora;
+
+	protected Concierto(long identificador, LocalDate fechayHora) {
+		super();
+		Identificador = identificador;
+		FechayHora = fechayHora;
+	}
 
 	public long getIdentificador() {
 		return Identificador;

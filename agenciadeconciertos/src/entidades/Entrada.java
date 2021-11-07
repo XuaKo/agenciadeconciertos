@@ -5,6 +5,13 @@ public class Entrada {
 	private String Precio_Euro;
 	private boolean Vip;
 
+	private Entrada(long identificador, String precio_Euro, boolean vip) {
+		super();
+		Identificador = identificador;
+		Precio_Euro = precio_Euro;
+		Vip = vip;
+	}
+
 	public long getIdentificador() {
 		return Identificador;
 	}

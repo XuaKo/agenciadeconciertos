@@ -1,8 +1,13 @@
 package entidades;
 
 public class Informe {
-
+	
 	private String Revision;
+
+	private Informe(String revision) {
+		super();
+		Revision = revision;
+	}
 
 	public String getRevision() {
 		return Revision;
