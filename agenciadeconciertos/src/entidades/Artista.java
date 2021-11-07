@@ -6,7 +6,7 @@ public class Artista {
 	private char Genero;
 
 	public Artista(long identificador, String nombre_Artistico, char genero) {
-		super();
+	
 		Identificador = identificador;
 		Nombre_Artistico = nombre_Artistico;
 		Genero = genero;
