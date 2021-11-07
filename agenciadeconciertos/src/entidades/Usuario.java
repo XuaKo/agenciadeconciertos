@@ -1,10 +1,10 @@
 package entidades;
 
 public class Usuario {
-	long identificador;
-	String NombreyApellidos;
-	long email;
-	String NIF;
+	private long identificador;
+	private String NombreyApellidos;
+	private long email;
+	private String NIF;
 
 	public long getIdentificador() {
 		return identificador;

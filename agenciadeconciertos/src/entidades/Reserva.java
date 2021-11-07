@@ -3,8 +3,8 @@ package entidades;
 import java.time.LocalDate;
 
 public class Reserva {
-	long identificador;
-	LocalDate fecha;
+	private long identificador;
+	private LocalDate fecha;
 
 	public long getIdentificador() {
 		return identificador;
