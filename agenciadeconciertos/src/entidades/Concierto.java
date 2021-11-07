@@ -4,27 +4,23 @@ import java.time.LocalDate;
 
 public class Concierto {
 
-protected long Identificador;
-protected LocalDate FechayHora;
-  
-public long getIdentificador()
-{
-  return Identificador;
-}
- 
-public void setIdentificador(identificador)
-{
-  Identificador = identificador;
-}
+	protected long Identificador;
+	protected LocalDate FechayHora;
 
- public LocalDate getFechayHora()
- {
-    return FechayHora;
- }
-  
- public void setFechayHora(LocalDate fechayhora)
- {
-    FechayHora = fehcayhora;
- }
+	public long getIdentificador() {
+		return Identificador;
+	}
+
+	public void setIdentificador(long identificador) {
+		Identificador = identificador;
+	}
+
+	public LocalDate getFechayHora() {
+		return FechayHora;
+	}
+
+	public void setFechayHora(LocalDate fechayhora) {
+		FechayHora = fechayhora;
+	}
 
 }
