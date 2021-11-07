@@ -8,7 +8,6 @@ public class Momento {
 	private LocalDate Fecha;
 
 	public Momento(long identificador, String descripcion, LocalDate fecha) {
-		super();
 		Identificador = identificador;
 		Descripcion = descripcion;
 		Fecha = fecha;
