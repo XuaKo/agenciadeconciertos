@@ -5,12 +5,14 @@ public class Actuacion {
 	private int Numero_Secuencia;
 	private String Duracion;
 
-	private Actuacion(long identificacion, int numero_Secuencia, String duracion) {
+	
+	public Actuacion(long identificacion, int numero_Secuencia, String duracion) {
 		super();
 		Identificacion = identificacion;
 		Numero_Secuencia = numero_Secuencia;
 		Duracion = duracion;
 	}
+
 
 	public long getIdentificacion() {
 		return Identificacion;

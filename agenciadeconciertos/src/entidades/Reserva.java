@@ -6,7 +6,7 @@ public class Reserva {
 	private long identificador;
 	private LocalDate fecha;
 
-	private Reserva(long identificador, LocalDate fecha) {
+	public Reserva(long identificador, LocalDate fecha) {
 		super();
 		this.identificador = identificador;
 		this.fecha = fecha;

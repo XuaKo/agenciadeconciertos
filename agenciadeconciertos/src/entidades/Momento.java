@@ -7,7 +7,7 @@ public class Momento {
 	private String Descripcion;
 	private LocalDate Hora;
 
-	private Momento(long identificador, String descripcion, LocalDate hora) {
+	public Momento(long identificador, String descripcion, LocalDate hora) {
 		super();
 		Identificador = identificador;
 		Descripcion = descripcion;

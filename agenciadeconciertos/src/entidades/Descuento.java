@@ -6,7 +6,7 @@ public class Descuento {
 	private LocalDate Fecha_Validez;
 	private long Codigo_Unico;
 
-	private Descuento(LocalDate fecha_Validez, long codigo_Unico) {
+	public Descuento(LocalDate fecha_Validez, long codigo_Unico) {
 		super();
 		Fecha_Validez = fecha_Validez;
 		Codigo_Unico = codigo_Unico;

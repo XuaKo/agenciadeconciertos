@@ -5,7 +5,7 @@ public class Artista {
 	private String Nombre_Artistico;
 	private long Genero;
 
-	private Artista(long identificador, String nombre_Artistico, long genero) {
+	public Artista(long identificador, String nombre_Artistico, long genero) {
 		super();
 		Identificador = identificador;
 		Nombre_Artistico = nombre_Artistico;

@@ -6,7 +6,7 @@ public class Usuario {
 	private long email;
 	private String NIF;
 
-	private Usuario(long identificador, String nombreyApellidos, long email, String nIF) {
+	public Usuario(long identificador, String nombreyApellidos, long email, String nIF) {
 		super();
 		this.identificador = identificador;
 		NombreyApellidos = nombreyApellidos;

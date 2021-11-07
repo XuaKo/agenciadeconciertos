@@ -4,7 +4,7 @@ public class Informe {
 	
 	private String Revision;
 
-	private Informe(String revision) {
+	public Informe(String revision) {
 		super();
 		Revision = revision;
 	}

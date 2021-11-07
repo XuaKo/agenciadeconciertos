@@ -5,7 +5,7 @@ public class Entrada {
 	private String Precio_Euro;
 	private boolean Vip;
 
-	private Entrada(long identificador, String precio_Euro, boolean vip) {
+	public Entrada(long identificador, String precio_Euro, boolean vip) {
 		super();
 		Identificador = identificador;
 		Precio_Euro = precio_Euro;

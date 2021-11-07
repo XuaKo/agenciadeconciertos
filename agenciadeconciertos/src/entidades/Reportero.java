@@ -5,7 +5,7 @@ public class Reportero {
 	private String NIF;
 	private int Telefono;
 
-	private Reportero(String nombreyApellidos, String nIF, int telefono) {
+	public Reportero(String nombreyApellidos, String nIF, int telefono) {
 		super();
 		NombreyApellidos = nombreyApellidos;
 		NIF = nIF;
