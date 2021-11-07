@@ -6,7 +6,6 @@ public class Reportero {
 	private String Telefono;
 
 	public Reportero(String nombreyApellidos, String nIF, String telefono) {
-		super();
 		NombreyApellidos = nombreyApellidos;
 		NIF = nIF;
 		Telefono = telefono;
