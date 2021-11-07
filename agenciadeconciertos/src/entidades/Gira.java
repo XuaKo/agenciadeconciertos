@@ -9,7 +9,6 @@ public class Gira {
 	private LocalDate FechaCierre;
 
 	public Gira(String nombreUnico, LocalDate fechaApertura, LocalDate fechaCierre) {
-		super();
 		NombreGira = nombreUnico;
 		FechaApertura = fechaApertura;
 		FechaCierre = fechaCierre;
