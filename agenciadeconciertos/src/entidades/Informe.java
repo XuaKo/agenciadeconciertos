@@ -5,7 +5,6 @@ public class Informe {
 	private String Revision;
 
 	public Informe(long id, String revision) {
-		super();
 		this.id = id;
 		Revision = revision;
 	}
