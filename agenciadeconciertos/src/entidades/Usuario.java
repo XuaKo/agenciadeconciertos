@@ -8,7 +8,6 @@ public class Usuario {
 	private boolean verificado = false;
 
 	public Usuario(long identificador, String nombreyApellidos, String email, String nIF, boolean verificado) {
-		super();
 		this.identificador = identificador;
 		NombreyApellidos = nombreyApellidos;
 		this.email = email;
