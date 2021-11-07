@@ -6,7 +6,6 @@ public class Actuacion {
 	private String Duracion;
 
 	public Actuacion(long identificacion, String numero_Secuencia, String duracion) {
-		super();
 		Identificacion = identificacion;
 		Numero_Secuencia = numero_Secuencia;
 		Duracion = duracion;
