@@ -4,23 +4,23 @@ import java.time.LocalDate;
 
 public class Gira {
 
-	private String NombreUnico;
+	private String NombreGira;
 	private LocalDate FechaApertura;
 	private LocalDate FechaCierre;
 
 	public Gira(String nombreUnico, LocalDate fechaApertura, LocalDate fechaCierre) {
 		super();
-		NombreUnico = nombreUnico;
+		NombreGira = nombreUnico;
 		FechaApertura = fechaApertura;
 		FechaCierre = fechaCierre;
 	}
 
-	public String getNombreUnico() {
-		return NombreUnico;
+	public String getNombreGira() {
+		return NombreGira;
 	}
 
-	public void setNombreUnico(String nombreUnico) {
-		NombreUnico = nombreUnico;
+	public void setNombreUnico(String nombreGira) {
+		NombreGira = nombreGira;
 	}
 
 	public LocalDate getFechaApertura() {

@@ -3,10 +3,10 @@ package entidades;
 public class Compra {
 
 	private long Identificador;
-	private int Precio_Total_Euro;
+	private String Precio_Total_Euro;
 	private String Metodo_Pago;
 
-	public Compra(long identificador, int precio_Total_Euro, String metodo_Pago) {
+	public Compra(long identificador, String precio_Total_Euro, String metodo_Pago) {
 		super();
 		Identificador = identificador;
 		Precio_Total_Euro = precio_Total_Euro;
@@ -21,11 +21,11 @@ public class Compra {
 		Identificador = identificador;
 	}
 
-	public int getPrecio_Total_Euro() {
+	public String getPrecio_Total_Euro() {
 		return Precio_Total_Euro;
 	}
 
-	public void setPrecio_Total_Euro(int precio_total_euro) {
+	public void setPrecio_Total_Euro(String precio_total_euro) {
 		Precio_Total_Euro = precio_total_euro;
 	}
 

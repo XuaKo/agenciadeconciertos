@@ -1,12 +1,21 @@
 package entidades;
 
 public class Informe {
-	
+	private long id;
 	private String Revision;
 
-	public Informe(String revision) {
+	public Informe(long id, String revision) {
 		super();
+		this.id = id;
 		Revision = revision;
+	}
+
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
 	}
 
 	public String getRevision() {

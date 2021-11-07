@@ -11,5 +11,5 @@ public class Individual extends Concierto {
 	protected Individual(long identificador, LocalDate fechayHora) {
 		super(identificador, fechayHora);
 	}
-	
+
 }

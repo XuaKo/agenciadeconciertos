@@ -3,9 +3,9 @@ package entidades;
 public class Artista {
 	private long Identificador;
 	private String Nombre_Artistico;
-	private long Genero;
+	private char Genero;
 
-	public Artista(long identificador, String nombre_Artistico, long genero) {
+	public Artista(long identificador, String nombre_Artistico, char genero) {
 		super();
 		Identificador = identificador;
 		Nombre_Artistico = nombre_Artistico;
@@ -32,7 +32,7 @@ public class Artista {
 		return Genero;
 	}
 
-	public void setGenero(long genero) {
+	public void setGenero(char genero) {
 		Genero = genero;
 	}
 

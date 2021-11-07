@@ -4,12 +4,22 @@ import java.time.LocalDate;
 
 public class Descuento {
 	private LocalDate Fecha_Validez;
-	private long Codigo_Unico;
+	private String Codigo_Unico;
+	private boolean DescuentoAplicado = false;
 
-	public Descuento(LocalDate fecha_Validez, long codigo_Unico) {
+	public Descuento(LocalDate fecha_Validez, String codigo_Unico, boolean descuentoAplicado) {
 		super();
 		Fecha_Validez = fecha_Validez;
 		Codigo_Unico = codigo_Unico;
+		DescuentoAplicado = descuentoAplicado;
+	}
+
+	public boolean isDescuentoAplicado() {
+		return DescuentoAplicado;
+	}
+
+	public void setDescuentoAplicado(boolean descuentoAplicado) {
+		DescuentoAplicado = descuentoAplicado;
 	}
 
 	public LocalDate getFecha_Validez() {
@@ -20,11 +30,11 @@ public class Descuento {
 		Fecha_Validez = fecha_validez;
 	}
 
-	public long getCodigo_Unico() {
+	public String getCodigo_Unico() {
 		return Codigo_Unico;
 	}
 
-	public void setCodigo_Unico(long codigo_unico) {
+	public void setCodigo_Unico(String codigo_unico) {
 		Codigo_Unico = codigo_unico;
 	}
 

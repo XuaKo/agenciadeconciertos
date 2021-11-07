@@ -3,7 +3,7 @@ package entidades;
 public class Entrada {
 	private long Identificador;
 	private String Precio_Euro;
-	private boolean Vip;
+	private boolean Vip = false;
 
 	public Entrada(long identificador, String precio_Euro, boolean vip) {
 		super();

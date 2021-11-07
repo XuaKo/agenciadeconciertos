@@ -3,9 +3,9 @@ package entidades;
 public class Reportero {
 	private String NombreyApellidos;
 	private String NIF;
-	private int Telefono;
+	private String Telefono;
 
-	public Reportero(String nombreyApellidos, String nIF, int telefono) {
+	public Reportero(String nombreyApellidos, String nIF, String telefono) {
 		super();
 		NombreyApellidos = nombreyApellidos;
 		NIF = nIF;
@@ -28,11 +28,11 @@ public class Reportero {
 		NIF = nif;
 	}
 
-	public int gettelefono() {
+	public String gettelefono() {
 		return Telefono;
 	}
 
-	public void setTelefono(int telefono) {
+	public void setTelefono(String telefono) {
 		Telefono = telefono;
 	}
 
