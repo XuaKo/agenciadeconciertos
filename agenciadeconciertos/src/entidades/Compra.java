@@ -7,7 +7,6 @@ public class Compra {
 	private String Metodo_Pago;
 
 	public Compra(long identificador, String precio_Total_Euro, String metodo_Pago) {
-		super();
 		Identificador = identificador;
 		Precio_Total_Euro = precio_Total_Euro;
 		Metodo_Pago = metodo_Pago;
