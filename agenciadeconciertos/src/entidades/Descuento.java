@@ -8,7 +8,6 @@ public class Descuento {
 	private boolean DescuentoAplicado = false;
 
 	public Descuento(LocalDate fecha_Validez, String codigo_Unico, boolean descuentoAplicado) {
-		super();
 		Fecha_Validez = fecha_Validez;
 		Codigo_Unico = codigo_Unico;
 		DescuentoAplicado = descuentoAplicado;
