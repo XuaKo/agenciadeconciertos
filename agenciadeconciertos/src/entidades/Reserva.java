@@ -8,7 +8,6 @@ public class Reserva {
 	private boolean EntradaCanjeada = false;
 
 	public Reserva(long identificador, LocalDate fecha, boolean entradaCanjeada) {
-		super();
 		this.identificador = identificador;
 		this.fecha = fecha;
 		EntradaCanjeada = entradaCanjeada;
