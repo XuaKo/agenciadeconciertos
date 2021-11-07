@@ -37,4 +37,9 @@ public class Compra {
 		Metodo_Pago = metodo_pago;
 	}
 
+	public String toString() {
+		return "Compra [Identificador=" + Identificador + ", Precio_Total_Euro=" + Precio_Total_Euro + ", Metodo_Pago="
+				+ Metodo_Pago + "]";
+	}
+
 }

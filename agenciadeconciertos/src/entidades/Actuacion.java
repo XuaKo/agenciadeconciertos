@@ -36,4 +36,9 @@ public class Actuacion {
 		Duracion = duracion;
 	}
 
+	public String toString() {
+		return "Actuacion [Identificacion=" + Identificacion + ", Numero_Secuencia=" + Numero_Secuencia + ", Duracion="
+				+ Duracion + "]";
+	}
+
 }

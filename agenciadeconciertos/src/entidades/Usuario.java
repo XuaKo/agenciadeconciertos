@@ -56,4 +56,9 @@ public class Usuario {
 		NIF = nIF;
 	}
 
+	public String toString() {
+		return "Usuario [identificador=" + identificador + ", NombreyApellidos=" + NombreyApellidos + ", email=" + email
+				+ ", NIF=" + NIF + ", verificado=" + verificado + "]";
+	}
+
 }

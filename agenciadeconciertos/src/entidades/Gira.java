@@ -39,4 +39,9 @@ public class Gira {
 		FechaCierre = fechaCierre;
 	}
 
+	public String toString() {
+		return "Gira [NombreGira=" + NombreGira + ", FechaApertura=" + FechaApertura + ", FechaCierre=" + FechaCierre
+				+ "]";
+	}
+
 }

@@ -38,4 +38,8 @@ public class Momento {
 		Fecha = fecha;
 	}
 
+	public String toString() {
+		return "Momento [Identificador=" + Identificador + ", Descripcion=" + Descripcion + ", Fecha=" + Fecha + "]";
+	}
+
 }

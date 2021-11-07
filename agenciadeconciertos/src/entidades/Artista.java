@@ -36,4 +36,9 @@ public class Artista {
 		Genero = genero;
 	}
 
+	public String toString() {
+		return "Artista [Identificador=" + Identificador + ", Nombre_Artistico=" + Nombre_Artistico + ", Genero="
+				+ Genero + "]";
+	}
+
 }

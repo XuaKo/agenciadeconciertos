@@ -33,4 +33,8 @@ public class Concierto {
 		FechayHora = fechayhora;
 	}
 
+	public String toString() {
+		return "Concierto [Identificador=" + Identificador + ", FechayHora=" + FechayHora + "]";
+	}
+
 }

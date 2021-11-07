@@ -36,4 +36,8 @@ public class Entrada {
 		Vip = vip;
 	}
 
+	public String toString() {
+		return "Entrada [Identificador=" + Identificador + ", Precio_Euro=" + Precio_Euro + ", Vip=" + Vip + "]";
+	}
+
 }

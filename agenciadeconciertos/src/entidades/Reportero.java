@@ -36,4 +36,8 @@ public class Reportero {
 		Telefono = telefono;
 	}
 
+	public String toString() {
+		return "Reportero [NombreyApellidos=" + NombreyApellidos + ", NIF=" + NIF + ", Telefono=" + Telefono + "]";
+	}
+
 }

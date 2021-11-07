@@ -38,4 +38,9 @@ public class Descuento {
 		Codigo_Unico = codigo_unico;
 	}
 
+	public String toString() {
+		return "Descuento [Fecha_Validez=" + Fecha_Validez + ", Codigo_Unico=" + Codigo_Unico + ", DescuentoAplicado="
+				+ DescuentoAplicado + "]";
+	}
+
 }

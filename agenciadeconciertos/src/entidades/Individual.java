@@ -12,4 +12,8 @@ public class Individual extends Concierto {
 		super(identificador, fechayHora);
 	}
 
+	public String toString() {
+		return "Individual []";
+	}
+
 }

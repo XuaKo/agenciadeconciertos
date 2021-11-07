@@ -26,4 +26,8 @@ public class Informe {
 		Revision = revision;
 	}
 
+	public String toString() {
+		return "Informe [id=" + id + ", Revision=" + Revision + "]";
+	}
+
 }

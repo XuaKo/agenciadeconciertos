@@ -38,4 +38,9 @@ public class Reserva {
 		this.fecha = fecha;
 	}
 
+	public String toString() {
+		return "Reserva [identificador=" + identificador + ", fecha=" + fecha + ", EntradaCanjeada=" + EntradaCanjeada
+				+ "]";
+	}
+
 }

@@ -13,5 +13,8 @@ public class Colaboracion extends Concierto {
 		super(identificador, fechayHora);
 
 	}
+	public String toString() {
+		return "Colaboracion []";
+	}
 
 }
