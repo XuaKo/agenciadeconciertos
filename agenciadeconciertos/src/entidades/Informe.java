@@ -1,12 +1,21 @@
 package entidades;
 
+import java.util.Scanner;
+
 public class Informe {
 	private long id;
-	private String Revision;
+	private String revision;
+
+	Scanner teclado = new Scanner(System.in);
 
 	public Informe(long id, String revision) {
 		this.id = id;
-		Revision = revision;
+		this.revision = revision;
+
+		System.out.print("Introduzca su identificador:");
+		id = teclado.nextLong();
+		System.out.print("Redacte su revision:");
+		revision = teclado.next();
 	}
 
 	public long getId() {
@@ -18,15 +27,15 @@ public class Informe {
 	}
 
 	public String getRevision() {
-		return Revision;
+		return revision;
 	}
 
 	public void setRevision(String revision) {
-		Revision = revision;
+		this.revision = revision;
 	}
 
 	public String toString() {
-		return "Informe [id=" + id + ", Revision=" + Revision + "]";
+		return "Informe [id=" + id + ", Revision=" + revision + "]";
 	}
 
 }

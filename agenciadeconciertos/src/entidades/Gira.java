@@ -2,44 +2,50 @@ package entidades;
 
 import java.time.LocalDate;
 
+import java.util.Scanner;
+
 public class Gira {
 
-	private String NombreGira;
-	private LocalDate FechaApertura;
-	private LocalDate FechaCierre;
+	private String nombreGira;
+	private LocalDate fechaApertura;
+	private LocalDate fechaCierre;
 
-	public Gira(String nombreUnico, LocalDate fechaApertura, LocalDate fechaCierre) {
-		NombreGira = nombreUnico;
-		FechaApertura = fechaApertura;
-		FechaCierre = fechaCierre;
+	Scanner teclado = new Scanner(System.in);
+
+	public Gira(String nombreGira, LocalDate fechaApertura, LocalDate fechaCierre) {
+		this.nombreGira = nombreGira;
+		this.fechaApertura = fechaApertura;
+		this.fechaCierre = fechaCierre;
+		System.out.print("Introduzca el nombre de la gira:");
+		nombreGira = teclado.next();
 	}
 
 	public String getNombreGira() {
-		return NombreGira;
+		return nombreGira;
 	}
 
 	public void setNombreUnico(String nombreGira) {
-		NombreGira = nombreGira;
+		this.nombreGira = nombreGira;
 	}
 
 	public LocalDate getFechaApertura() {
-		return FechaApertura;
+		return fechaApertura;
 	}
 
 	public void setFechaApertura(LocalDate fechaApertura) {
-		FechaApertura = fechaApertura;
+		this.fechaApertura = fechaApertura;
 	}
 
 	public LocalDate getFechaCierre() {
-		return FechaCierre;
+		return fechaCierre;
 	}
 
 	public void setFechaCierre(LocalDate fechaCierre) {
-		FechaCierre = fechaCierre;
+		this.fechaCierre = fechaCierre;
 	}
 
 	public String toString() {
-		return "Gira [NombreGira=" + NombreGira + ", FechaApertura=" + FechaApertura + ", FechaCierre=" + FechaCierre
+		return "Gira [NombreGira=" + nombreGira + ", FechaApertura=" + fechaApertura + ", FechaCierre=" + fechaCierre
 				+ "]";
 	}
 
