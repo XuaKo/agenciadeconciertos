@@ -1,44 +1,55 @@
 package entidades;
 
 import java.time.LocalDate;
+import java.util.Scanner;
 
 public class Momento {
-	private long Identificador;
-	private String Descripcion;
-	private LocalDate Fecha;
+	private long identificador;
+	private String descripcion;
+	private LocalDate fecha;
+	Scanner read =  new Scanner(System.in);
 
 	public Momento(long identificador, String descripcion, LocalDate fecha) {
-		Identificador = identificador;
-		Descripcion = descripcion;
-		Fecha = fecha;
+		this.identificador = identificador;
+		this.descripcion = descripcion;
+		this.fecha = fecha;
+		
+		System.out.print("introuzca el identificador");
+		identificador = read.nextLong();
+		System.out.print("introduzca una descripcion");
+		descripcion = read.next();
+		System.out.print("introduce la fecha");
+		fecha.adjustInto(fecha);
+		
+		
 	}
 
 	public long getIdentificador() {
-		return Identificador;
+		return identificador;
 	}
 
 	public void setidentificador(long identificador) {
-		Identificador = identificador;
+		this.identificador = identificador;
 	}
 
 	public String getDescripcion() {
-		return Descripcion;
+		return descripcion;
 	}
 
 	public void setDescripcion(String descripcion) {
-		Descripcion = descripcion;
+		this.descripcion = descripcion;
 	}
 
 	public LocalDate getFecha() {
-		return Fecha;
+		return fecha;
 	}
 
 	public void setFecha(LocalDate fecha) {
-		Fecha = fecha;
+		this.fecha = fecha;
 	}
 
 	public String toString() {
-		return "Momento [Identificador=" + Identificador + ", Descripcion=" + Descripcion + ", Fecha=" + Fecha + "]";
+		return "Momento [Identificador=" + identificador + ", Descripcion=" + descripcion + ", Fecha=" + fecha + "]";
 	}
 
 }
