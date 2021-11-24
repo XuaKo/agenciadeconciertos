@@ -1,6 +1,7 @@
 package entidades;
 
 import java.time.LocalDate;
+import java.util.Scanner;
 
 public class Concierto {
 	
@@ -35,9 +36,19 @@ public class Concierto {
 	}
     //metodo to String
 	public String toString() {
-		return "Concierto [Identificador=" + identificador + ", FechayHora=" + fechayhora + "]";
+		return "Concierto [Identificador=" + identificado + ", FechayHora=" + fechayhor + "]";
+	}
 		
-		
+	//parece estar perfectamente declarado pero no funciona	
+		public Concierto nuevoconcierto() {
+			Concierto ret = new Concierto();
+			Scanner scan =new Scanner(System.in);
+			System.out.println("indique cual es su identificador");
+			scan.nextLong();
+			System.out.println("indique el codigo de su descuento");
+			fechayhor.adjustInto(fechayhor);
+			scan.close();
+			return ret;
 		
 	}
 	
