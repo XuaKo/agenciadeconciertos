@@ -1,7 +1,7 @@
 package entidades;
 
 import java.util.Scanner;
-
+	
 public class Informe {
 	private long id;
 	private String revision;
