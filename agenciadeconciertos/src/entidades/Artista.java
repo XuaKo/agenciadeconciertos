@@ -6,7 +6,7 @@ public class Artista {
 	private long identificador;
 	private String nombre_Artistico;
 	private char genero;
-
+		
 	public Artista() {
 
 	}
