@@ -11,7 +11,7 @@ public class Actuacion {
 	private ArrayList<Artista> artistas = new ArrayList<Artista>();
 	
 
-	public Actuacion(long identificacion, int numero_Secuencia, int duracion, ArrayList<Artista> artista) {
+	public Actuacion(long identificacion, int numero_Secuencia, int duracion, ArrayList<Artista> artistas) {
 		this.identificacion = identificacion;
 		this.numero_Secuencia = numero_Secuencia;
 		this.duracion = duracion;
@@ -19,11 +19,11 @@ public class Actuacion {
 		boolean bool1 = false;
 		boolean bool2 = false;
 		
-		System.out.print("introduzca la identificación");
+		System.out.print("introduzca la identificaciï¿½n");
 		identificacion = read.nextLong();
 		System.out.print("introduzca el numero de secuencia");
 		numero_Secuencia = read.nextInt();
-		System.out.print("introduzca la duración de la actuación");
+		System.out.print("introduzca la duraciï¿½n de la actuaciï¿½n");
 		duracion = read.nextInt();
 			
 		if(duracion < 1| duracion>5) {
