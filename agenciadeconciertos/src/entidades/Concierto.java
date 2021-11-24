@@ -10,6 +10,8 @@ public class Concierto {
 
 	protected long Identificador;
 	protected LocalDate FechayHora;
+	
+	//pito
 
 	protected Concierto(long identificador, LocalDate fechayHora) {
 		super();
@@ -35,6 +37,12 @@ public class Concierto {
 
 	public String toString() {
 		return "Concierto [Identificador=" + Identificador + ", FechayHora=" + FechayHora + "]";
+		
+		
 	}
-
+	
+   
+	
+	
+	
 }
