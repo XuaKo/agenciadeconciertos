@@ -10,14 +10,24 @@ public class Gira {
 	private LocalDate fechaApertura;
 	private LocalDate fechaCierre;
 
-	Scanner teclado = new Scanner(System.in);
+	public Gira() {
+
+	}
 
 	public Gira(String nombreGira, LocalDate fechaApertura, LocalDate fechaCierre) {
 		this.nombreGira = nombreGira;
 		this.fechaApertura = fechaApertura;
 		this.fechaCierre = fechaCierre;
+
+	}
+
+	public Gira nuevaGira() {
+		Gira ret = new Gira();
+		Scanner teclado = new Scanner(System.in);
 		System.out.print("Introduzca el nombre de la gira:");
 		nombreGira = teclado.next();
+		teclado.close();
+		return ret;
 	}
 
 	public String getNombreGira() {

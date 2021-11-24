@@ -6,16 +6,25 @@ public class Informe {
 	private long id;
 	private String revision;
 
-	Scanner teclado = new Scanner(System.in);
+	public Informe() {
+
+	}
 
 	public Informe(long id, String revision) {
 		this.id = id;
 		this.revision = revision;
+	}
+
+	public Informe nuevoInforme() {
+		Informe ret = new Informe();
+		Scanner teclado = new Scanner(System.in);
 
 		System.out.print("Introduzca su identificador:");
 		id = teclado.nextLong();
 		System.out.print("Redacte su revision:");
 		revision = teclado.next();
+		teclado.close();
+		return ret;
 	}
 
 	public long getId() {

@@ -7,13 +7,22 @@ public class Artista {
 	private String nombre_Artistico;
 	private char genero;
 
-	Scanner teclado = new Scanner(System.in);
+	public Artista() {
+
+	}
 
 	public Artista(long identificador, String nombre_Artistico, char genero) {
 
 		this.identificador = identificador;
 		this.nombre_Artistico = nombre_Artistico;
 		this.genero = genero;
+
+	}
+
+	public Artista nuevoArtista() {
+		Artista ret = new Artista();
+		Scanner teclado = new Scanner(System.in);
+
 		System.out.print("Introduzca su identificador:");
 		identificador = teclado.nextLong();
 		System.out.print("Introduzca su nombre artistico:");
@@ -21,6 +30,8 @@ public class Artista {
 		System.out.print("Introduzca la inicial de su genero musical:");
 		genero = teclado.nextLine().charAt(0);
 
+		teclado.close();
+		return ret;
 	}
 
 	public long getidentIdenficador() {
