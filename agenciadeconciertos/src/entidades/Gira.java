@@ -14,7 +14,6 @@ public class Gira {
 
 	}
 
-
 	public Gira(String nombreGira, LocalDate fechaApertura, LocalDate fechaCierre) {
 		this.nombreGira = nombreGira;
 		this.fechaApertura = fechaApertura;
@@ -28,9 +27,9 @@ public class Gira {
 		System.out.print("Introduzca el nombre de la gira:");
 		nombreGira = teclado.next();
 		LocalDate fechaApertura = LocalDate.of(0, 0, 0);
-        gira1.setFechaApertura(fechaApertura);
-        LocalDate fechaCierre = LocalDate.of(0, 0, 0);
-        gira1.setFechaCierre(fechaCierre);
+		gira1.setFechaApertura(fechaApertura);
+		LocalDate fechaCierre = LocalDate.of(0, 0, 0);
+		gira1.setFechaCierre(fechaCierre);
 		teclado.close();
 		return gira1;
 	}
