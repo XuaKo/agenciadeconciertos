@@ -1,5 +1,7 @@
 package entidades;
 
+import java.util.Scanner;
+
 public class Usuario {
 	private long identificador;
 	private String NombreyApellidos;
@@ -7,12 +9,33 @@ public class Usuario {
 	private String NIF;
 	private boolean verificado = false;
 
+	public Usuario() {
+
+	}
+
 	public Usuario(long identificador, String nombreyApellidos, String email, String nIF, boolean verificado) {
 		this.identificador = identificador;
 		NombreyApellidos = nombreyApellidos;
 		this.email = email;
 		NIF = nIF;
 		this.verificado = verificado;
+	}
+
+	public Usuario nuevoUsuario() {
+		Usuario usuario1 = new Usuario();
+		Scanner teclado = new Scanner(System.in);
+		System.out.println("Escriba el identificador del usuario:");
+		identificador = teclado.nextLong();
+		System.out.println("Escriba su nombre y apellidos:");
+		NombreyApellidos = teclado.next();
+		System.out.println("Escriba su email:");
+		email = teclado.next();
+		System.out.println("Escriba el NIF:");
+		NIF = teclado.next();
+		System.out.println("Indique si el usuario esta verificado o no(true/false):");
+		teclado.nextBoolean();
+		teclado.close();
+		return usuario1;
 	}
 
 	public boolean isVerificado() {
