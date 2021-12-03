@@ -24,8 +24,17 @@ public class Usuario {
 	public Usuario nuevoUsuario() {
 		Usuario usuario1 = new Usuario();
 		Scanner teclado = new Scanner(System.in);
-		System.out.println("Escriba el identificador del usuario:");
-		identificador = teclado.nextLong();
+		boolean idvalido = false;
+		do {
+			System.out.print("Introduzca su identificador:");
+			identificador = teclado.nextLong();
+			if (identificador < 1) {
+				System.out.println("El identificador ha de ser mayor que 0");
+				idvalido = false;
+			} else {
+				idvalido = true;
+			}
+		} while (!idvalido);
 		System.out.println("Escriba su nombre y apellidos:");
 		NombreyApellidos = teclado.next();
 		System.out.println("Escriba su email:");

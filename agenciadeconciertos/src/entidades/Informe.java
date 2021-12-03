@@ -1,7 +1,7 @@
 package entidades;
 
 import java.util.Scanner;
-	
+
 public class Informe {
 	private long id;
 	private String revision;
@@ -18,9 +18,17 @@ public class Informe {
 	public Informe nuevoInforme() {
 		Informe ret = new Informe();
 		Scanner teclado = new Scanner(System.in);
-
-		System.out.print("Introduzca su identificador:");
-		id = teclado.nextLong();
+		boolean idvalido = false;
+		do {
+			System.out.print("Introduzca su identificador:");
+			id = teclado.nextLong();
+			if (id < 1) {
+				System.out.println("El identificador ha de ser mayor que 0");
+				idvalido = false;
+			} else {
+				idvalido = true;
+			}
+		} while (!idvalido);
 		System.out.print("Redacte su revision:");
 		revision = teclado.next();
 		teclado.close();
