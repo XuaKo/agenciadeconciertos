@@ -22,10 +22,12 @@ public class Actuacion {
 		 
 	}
 	// en este metodo se introduce informacion en los difernetes metodos
-	public  Actuacion nuevaActuacion() {
+	public static Actuacion nuevaActuacion() {
 		Actuacion ret = new Actuacion();// se hace el ret para poder hacer un return
 		Scanner read = new Scanner(System.in);
-		
+		long identificacion = -1;
+		int numero_Secuencia = -1;
+		int duracion = -1;
 		System.out.print("introduzca la identificación");
 		identificacion = read.nextLong();
 		//bucle while para validaar la identificacion

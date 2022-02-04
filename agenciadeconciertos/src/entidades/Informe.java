@@ -15,9 +15,11 @@ public class Informe {
 		this.revision = revision;
 	}
 
-	public Informe nuevoInforme() {
+	public static Informe nuevoInforme() {
 		Informe ret = new Informe();
 		Scanner teclado = new Scanner(System.in);
+		long id = -1;
+		String revision = "";
 		boolean idvalido = false;
 		do {
 			System.out.print("Introduzca su identificador:");

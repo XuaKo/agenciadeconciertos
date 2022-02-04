@@ -3,6 +3,8 @@ package entidades;
 import java.time.LocalDate;
 import java.util.Scanner;
 
+import utils.Utiles;
+
 public class Concierto {
 	
 	protected long identificado;
@@ -40,13 +42,15 @@ public class Concierto {
 	}
 		
 	//parece estar perfectamente declarado pero no funciona	
-		public Concierto nuevoconcierto() {
+		public static Concierto nuevoconcierto() {
 			Concierto ret = new Concierto();
 			Scanner scan =new Scanner(System.in);
+			long identificado = -1;
+			LocalDate fechayhor; 
 			System.out.println("indique cual es su identificador");
-			scan.nextLong();
+			identificado = scan.nextLong();
 			System.out.println("indique el codigo de su descuento");
-			fechayhor.adjustInto(fechayhor);
+			fechayhor = Utiles.leerFecha();
 			scan.close();
 			return ret;
 		

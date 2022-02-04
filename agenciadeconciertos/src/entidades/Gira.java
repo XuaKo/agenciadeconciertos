@@ -3,6 +3,8 @@ package entidades;
 import java.time.LocalDate;
 
 import java.util.Scanner;
+
+import utils.Utiles;
 	
 public class Gira {
 
@@ -21,15 +23,19 @@ public class Gira {
 
 	}
 
-	public Gira nuevaGira() {
+	public static Gira nuevaGira() {
 		Gira gira1 = new Gira();
 		Scanner teclado = new Scanner(System.in);
+		String nombreGira = "";
+		LocalDate fechaApertura;
+		LocalDate fechaCierre;
 		System.out.print("Introduzca el nombre de la gira:");
 		nombreGira = teclado.next();
-		LocalDate fechaApertura = LocalDate.of(0, 0, 0);
-		gira1.setFechaApertura(fechaApertura);
-		LocalDate fechaCierre = LocalDate.of(0, 0, 0);
-		gira1.setFechaCierre(fechaCierre);
+		System.out.print("Introduzca la fecha de apertura de la gira:");
+		fechaApertura = Utiles.leerFecha();
+		System.out.print("Introduzca la fecha de cierre de la gira:");
+		fechaCierre = Utiles.leerFecha();
+		
 		teclado.close();
 		return gira1;
 	}

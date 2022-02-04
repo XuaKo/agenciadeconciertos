@@ -19,9 +19,12 @@ public class Artista {
 
 	}
 
-	public Artista nuevoArtista() {
+	public static Artista nuevoArtista() {
 		Artista ret = new Artista();
 		Scanner teclado = new Scanner(System.in);
+		long identificador = -1;
+		String nombre_Artistico = "";
+		char genero;
 		boolean idvalido = false;
 		do {
 			System.out.print("Introduzca su identificador:");
