@@ -21,9 +21,13 @@ public class Usuario {
 		this.verificado = verificado;
 	}
 
-	public Usuario nuevoUsuario() {
+	public static Usuario nuevoUsuario() {
 		Usuario usuario1 = new Usuario();
 		Scanner teclado = new Scanner(System.in);
+		long identificador = -1;
+		String NombreyApellidos = "";
+		String email = "";
+		String NIF = "";
 		boolean idvalido = false;
 		do {
 			System.out.print("Introduzca su identificador:");

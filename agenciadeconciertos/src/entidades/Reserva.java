@@ -1,12 +1,15 @@
 package entidades;
 import java.time.LocalDate;
+import java.util.Scanner;
+
+import utils.Utiles;
 public class Reserva {
 	//autor Gabriel
 	
 	//atributos de la clase
     private long identificador;
     private LocalDate fecha;
-    private boolean EntradaCanjeada = false;
+    private boolean entradaCanjeada = false;
     //constructor por defecto
     public Reserva() {
     	
@@ -16,14 +19,14 @@ public class Reserva {
         super();
         this.identificador = identificador;
         this.fecha = fecha;
-        EntradaCanjeada = entradaCanjeada;
+        entradaCanjeada = this.entradaCanjeada;
     }
     //getters y setters
-    public boolean isEntradaCanjeada() {
-        return EntradaCanjeada;
+    public boolean isentradaCanjeada() {
+        return entradaCanjeada;
     }
     public void setEntradaCanjeada(boolean entradaCanjeada) {
-        EntradaCanjeada = entradaCanjeada;
+        entradaCanjeada = this.entradaCanjeada;
     }
     public long getIdentificador() {
         return identificador;
@@ -40,16 +43,31 @@ public class Reserva {
     
     //metodo to string
     public String toString() {
-        return "Reserva [identificador=" + identificador + ", fecha=" + fecha + ", EntradaCanjeada=" + EntradaCanjeada
+        return "Reserva [identificador=" + identificador + ", fecha=" + fecha + ", EntradaCanjeada=" + entradaCanjeada
                 + "]";
     }
     
-    public Reserva nuevareserva() {
+    public static Reserva nuevareserva() {
     	Reserva ret= new Reserva();
-    	
-    	
-    	
-    	
+    	Scanner sc = new Scanner (System.in);
+    	long identificador = -1;
+    	LocalDate fecha;
+    	boolean entradaCanjeada = false;
+    	boolean idvalido = false;
+		do {
+			System.out.print("Introduzca su identificador:");
+			identificador = sc.nextLong();
+			if (identificador < 1) {
+				System.out.println("El identificador ha de ser mayor que 0");
+				idvalido = false;
+			} else {
+				idvalido = true;
+			}
+		} while (!idvalido);
+		System.out.println("Introduzca la fecha de la rserva:");
+		fecha = Utiles.leerFecha();
+		System.out.println("Su entrada ha sido canjeada ('true' para si, 'false' para no):");
+		entradaCanjeada = sc.nextBoolean();
     	return ret;// aqui hace ek reuturn
     	
     }

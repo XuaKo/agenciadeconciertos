@@ -22,10 +22,11 @@ public class Momento {
 	public Momento() {
 	}
 	// en este metodo se introduce informacion en los difernetes metodos
-	public Momento nuevoMomento() {
+	public static Momento nuevoMomento() {
 		Scanner read =  new Scanner(System.in);
 		Momento ret = new Momento();// se hace el ret para poder hacer un return
-		
+		long identificador = -1;
+		String descripcion = "";
 		System.out.print("introuzca el identificador");
 		identificador = read.nextLong();
 		//bucle while para validaar el identificador

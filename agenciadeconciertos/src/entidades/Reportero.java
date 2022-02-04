@@ -21,10 +21,12 @@ public class Reportero {
 	}
 
 	// en este metodo se introduce informacion en los difernetes metodos
-	public Reportero nuevoReportero() {
+	public static Reportero nuevoReportero() {
 		Reportero ret = new Reportero(); // se hace el ret para poder hacer un return
 		Scanner read = new Scanner(System.in);
-
+		String nombreyApellidos = "";
+		String nif = "";
+		int telefono = -1;
 		System.out.print("introduce el nombre y el apellido");
 		nombreyApellidos = read.next();
 
