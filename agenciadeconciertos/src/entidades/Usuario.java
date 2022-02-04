@@ -2,6 +2,8 @@ package entidades;
 
 import java.util.Scanner;
 
+import utils.Utiles;
+
 public class Usuario {
 	private long identificador;
 	private String NombreyApellidos;
@@ -28,6 +30,7 @@ public class Usuario {
 		String NombreyApellidos = "";
 		String email = "";
 		String NIF = "";
+		boolean verificado = false;
 		boolean idvalido = false;
 		do {
 			System.out.print("Introduzca su identificador:");
@@ -45,8 +48,8 @@ public class Usuario {
 		email = teclado.next();
 		System.out.println("Escriba el NIF:");
 		NIF = teclado.next();
-		System.out.println("Indique si el usuario esta verificado o no(true/false):");
-		teclado.nextBoolean();
+		System.out.println("Indique si el usuario esta verificado o no('s'/'n'):");
+		verificado = Utiles.leerBoolean();
 		teclado.close();
 		return usuario1;
 	}
