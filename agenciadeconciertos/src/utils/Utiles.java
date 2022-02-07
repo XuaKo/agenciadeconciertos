@@ -10,7 +10,7 @@ public class Utiles {
 		LocalDate ret = null;
 		int dia;
 		int mes;
-		int año;
+		int aÃ±o;
 		boolean correcto = false;
 		Scanner teclado = new Scanner(System.in);
 		do {
@@ -19,8 +19,8 @@ public class Utiles {
 			dia = teclado.nextInt();
 			System.out.println("Introduzca el mes:");
 			mes = teclado.nextInt();
-			System.out.println("Introduzca un valor para el año");
-			año = teclado.nextInt();
+			System.out.println("Introduzca un valor para el aï¿½o");
+			aÃ±o = teclado.nextInt();
 
 			if (dia >= 1 | dia <= 31) {
 				correcto = true;
