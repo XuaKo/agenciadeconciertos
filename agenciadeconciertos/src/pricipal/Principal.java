@@ -54,6 +54,7 @@ public class Principal {
 					}		
 				}while(!val);
 				SwitchsubmenuUno(elecc);
+				break;
 			case 2: 
 				mostrarsubmenuEntradas();
 				do {
@@ -67,6 +68,7 @@ public class Principal {
 					}
 				}while(!val);
 				SwitchsubmenuDos(elecc);
+				break;
 			case 3: 
 				mostrarsubmenuMomentos();
 				do {
@@ -80,13 +82,14 @@ public class Principal {
 					}
 				}while(!val);
 				SwitchsubmenuMomentos(elecc);
+				break;
 				}
 			}
 			
 		}
 		
 	
-	//IMPORTANTE , para declarar metodos hay qye hacerlo fuera del metodo main
+	//IMPORTANTE , para declarar metodos hay que hacerlo fuera del metodo main
 	//aqui declaro todos los sub menus para que este mas limpio el switch principal
 	private static void mostrarsubmenuConciertos() {
 		System.out.println("gestion de conciertos!");
@@ -102,6 +105,8 @@ public class Principal {
 		switch(elecc) {
 		case 1: 
 			//aqui tendra que ir un metodo que muestre un array de conciertos y giras(supogo)
+			System.out.println("viendo giras y conciertos");
+			val=true;
 			break;
 		case 2: 
 			//imprementado el caso 2 dos menu(Gabriel)
@@ -117,6 +122,7 @@ public class Principal {
 		case 3:	
 			//aqui habra que hacer un metodo que nos permita localizar una gora o concierto en el array
 			//introduciendo algun tipo de dato
+			System.out.println("buscando la gira por su id!");
 			break;
 		case 4: 
 			val=true;
@@ -136,7 +142,7 @@ public class Principal {
 	}
 	private static void SwitchsubmenuDos(int elecc) {
 		boolean val=false;
-		do {
+		
 			switch(elecc) {
 			case 1:
 				//aqui tendra que ir alguna fincion para gestionar los usuarios
@@ -147,14 +153,14 @@ public class Principal {
 				break;
 			case 3:
 				//comprar entradas
-				System.out.println();
+				System.out.println("vamos a comprar entradas");
 				break;
 			case 4: 
 				val=true;
 				break;
 			}
 			
-		}while(!val);
+		
 	}
 	private static void mostrarsubmenuMomentos() {
 		System.out.println("gestion de Momentos!");
