@@ -7,7 +7,7 @@ import java.util.Scanner;
 import utils.Utiles;
 	
 public class Gira {
-
+	private long idGira;
 	private String nombreGira;
 	private LocalDate fechaApertura;
 	private LocalDate fechaCierre;
@@ -16,7 +16,8 @@ public class Gira {
 
 	}
 
-	public Gira(String nombreGira, LocalDate fechaApertura, LocalDate fechaCierre) {
+	public Gira(long idGira, String nombreGira, LocalDate fechaApertura, LocalDate fechaCierre) {
+		this.idGira = idGira;
 		this.nombreGira = nombreGira;
 		this.fechaApertura = fechaApertura;
 		this.fechaCierre = fechaCierre;
@@ -26,9 +27,21 @@ public class Gira {
 	public static Gira nuevaGira() {
 		Gira gira1 = new Gira();
 		Scanner teclado = new Scanner(System.in);
+		long idGira = -1;
 		String nombreGira = "";
 		LocalDate fechaApertura;
 		LocalDate fechaCierre;
+		boolean idvalido = false;
+		do {
+			System.out.print("Introduzca su identificador:");
+			idGira = teclado.nextLong();
+			if (idGira < 1) {
+				System.out.println("El identificador ha de ser mayor que 0");
+				idvalido = false;
+			} else {
+				idvalido = true;
+			}
+		} while (!idvalido);
 		System.out.print("Introduzca el nombre de la gira:");
 		nombreGira = teclado.next();
 		System.out.print("Introduzca la fecha de apertura de la gira:");
@@ -38,6 +51,14 @@ public class Gira {
 		
 		teclado.close();
 		return gira1;
+	}
+
+	public long getIdGira() {
+		return idGira;
+	}
+
+	public void setIdGira(long idGira) {
+		this.idGira = idGira;
 	}
 
 	public String getNombreGira() {
@@ -65,7 +86,7 @@ public class Gira {
 	}
 
 	public String toString() {
-		return "Gira [NombreGira=" + nombreGira + ", FechaApertura=" + fechaApertura + ", FechaCierre=" + fechaCierre
+		return "Gira [id=" + idGira + ", NombreGira=" + nombreGira + ", FechaApertura=" + fechaApertura + ", FechaCierre=" + fechaCierre
 				+ "]";
 	}
 

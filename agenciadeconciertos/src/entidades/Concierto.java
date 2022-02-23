@@ -7,7 +7,7 @@ import utils.Utiles;
 
 public class Concierto {
 	
-	protected long identificado;
+	protected long idConcierto;
 	protected LocalDate fechayhor;
 	
     //constructor por defecto
@@ -15,18 +15,18 @@ public class Concierto {
 	}
 
     //constructor con todos los atributos de la clase
-	protected Concierto(long identificador, LocalDate fechayHora) {
+	protected Concierto(long idConcierto, LocalDate fechayHora) {
 		super();
-		identificado = identificador;
-		fechayhor = fechayHora;
+		this.idConcierto = idConcierto;
+		this.fechayhor = fechayHora;
 	}
     //getters y setters
-	public long getIdentificado() {
-		return identificado;
+	public long getIdConcierto() {
+		return idConcierto;
 	}
 
-	public void setIdentificador(long identificador) {
-		identificado = identificador;
+	public void setIdConcierto(long idConcierto) {
+		this.idConcierto = idConcierto;
 	}
 
 	public LocalDate getFechayHora() {
@@ -38,17 +38,17 @@ public class Concierto {
 	}
     //metodo to String
 	public String toString() {
-		return "Concierto [Identificador=" + identificado + ", FechayHora=" + fechayhor + "]";
+		return "Concierto [Identificador=" + idConcierto + ", FechayHora=" + fechayhor + "]";
 	}
 		
 	//parece estar perfectamente declarado pero no funciona	
 		public static Concierto nuevoconcierto() {
 			Concierto ret = new Concierto();
 			Scanner scan =new Scanner(System.in);
-			long identificado = -1;
+			long idConcierto = -1;
 			LocalDate fechayhor; 
 			System.out.println("indique cual es su identificador");
-			identificado = scan.nextLong();
+			idConcierto = scan.nextLong();
 			System.out.println("indique el codigo de su descuento");
 			fechayhor = Utiles.leerFecha();
 			scan.close();

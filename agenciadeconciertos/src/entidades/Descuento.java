@@ -9,6 +9,7 @@ import utils.Utiles;
 //
 public class Descuento {
 	//atributos de la clase
+	private long idDescuento;
 	private LocalDate fecha_validez;
 	private String codigo_unico;
 	private boolean descuentoAplicado = false;
@@ -20,7 +21,8 @@ public class Descuento {
 	}
 	
     //constructor con todos los atributos
-	public Descuento(LocalDate fecha_Validez, String codigo_unico, boolean descuentoAplicado) {
+	public Descuento(long idDescuento, LocalDate fecha_Validez, String codigo_unico, boolean descuentoAplicado) {
+		this.idDescuento = idDescuento;
 		fecha_Validez = this.fecha_validez;
 		codigo_unico = this.codigo_unico;
 		descuentoAplicado = this.descuentoAplicado;
@@ -28,6 +30,14 @@ public class Descuento {
     //getters y setters
 	public boolean isDescuentoAplicado() {
 		return descuentoAplicado;
+	}
+
+	public long getIdDescuento() {
+		return idDescuento;
+	}
+
+	public void setIdDescuento(long idDescuento) {
+		this.idDescuento = idDescuento;
 	}
 
 	public void setDescuentoAplicado(boolean descuentoAplicado) {
@@ -58,8 +68,20 @@ public class Descuento {
 	public static Descuento nuevodescuento() {
 		Descuento ret = new Descuento();
 		Scanner scan =new Scanner(System.in);
+		long idDescuento = -1;
 		LocalDate fecha_validez;
 		String codigo_unico = "";
+		boolean idvalido = false;
+		do {
+			System.out.print("Introduzca su identificador:");
+			idDescuento = scan.nextLong();
+			if (idDescuento < 1) {
+				System.out.println("El identificador ha de ser mayor que 0");
+				idvalido = false;
+			} else {
+				idvalido = true;
+			}
+		} while (!idvalido);
 		System.out.println("indique su fecha de validez");
 		fecha_validez = Utiles.leerFecha();
 		System.out.println("indique el codigo de su descuento");

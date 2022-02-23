@@ -3,7 +3,7 @@ package entidades;
 import java.util.Scanner;
 
 public class Artista {
-	private long identificador;
+	private long idArtista;
 	private String nombre_Artistico;
 	private char genero;
 
@@ -11,9 +11,9 @@ public class Artista {
 
 	}
 
-	public Artista(long identificador, String nombre_Artistico, char genero) {
+	public Artista(long idArtista, String nombre_Artistico, char genero) {
 
-		this.identificador = identificador;
+		this.idArtista = idArtista;
 		this.nombre_Artistico = nombre_Artistico;
 		this.genero = genero;
 
@@ -22,14 +22,14 @@ public class Artista {
 	public static Artista nuevoArtista() {
 		Artista ret = new Artista();
 		Scanner teclado = new Scanner(System.in);
-		long identificador = -1;
+		long idArtista = -1;
 		String nombre_Artistico = "";
 		char genero;
 		boolean idvalido = false;
 		do {
 			System.out.print("Introduzca su identificador:");
-			identificador = teclado.nextLong();
-			if (identificador < 1) {
+			idArtista = teclado.nextLong();
+			if (idArtista < 1) {
 				System.out.println("El identificador ha de ser mayor que 0");
 				idvalido = false;
 			} else {
@@ -45,12 +45,12 @@ public class Artista {
 		return ret;
 	}
 
-	public long getidentIdenficador() {
-		return identificador;
+	public long getidentIdArtista() {
+		return idArtista;
 	}
 
-	public void setidentIdenficador(long identificador) {
-		this.identificador = identificador;
+	public void setidentIdArtista(long idArtista) {
+		this.idArtista = idArtista;
 	}
 
 	public String getNombre_Artistico() {
@@ -70,7 +70,7 @@ public class Artista {
 	}
 
 	public String toString() {
-		return "Artista [Identificador=" + identificador + ", Nombre_Artistico=" + nombre_Artistico + ", Genero="
+		return "Artista [Identificador=" + idArtista + ", Nombre_Artistico=" + nombre_Artistico + ", Genero="
 				+ genero + "]";
 	}
 
