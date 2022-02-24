@@ -1,21 +1,19 @@
 package entidades;
 import java.util.ArrayList;
 import java.util.Scanner;
-//autor Germán
+//autor Germï¿½n
 
-///*Aquí puse los atributos*
+///*Aquï¿½ puse los atributos*
 public class Actuacion {
 	private long identificacion;
 	private int numero_Secuencia;
 	private int duracion;
-	private ArrayList<Momento> momento = new ArrayList<Momento>();
 	
-//Aquí está el construcor de los atributos 
-	public Actuacion(long identificacion, int numero_Secuencia, int duracion, ArrayList<Momento>momento){// con este ultimo atributo se esteblece relación con la clase momento// 
+//Aquï¿½ estï¿½ el construcor de los atributos 
+	public Actuacion(long identificacion, int numero_Secuencia, int duracion){// con este ultimo atributo se esteblece relaciï¿½n con la clase momento// 
 		this.identificacion = identificacion;
 		this.numero_Secuencia = numero_Secuencia;
 		this.duracion = duracion;
-		this.momento = momento;
 	}
 	//constructor por defecto de Actuacion
 	public  Actuacion() {
@@ -28,7 +26,7 @@ public class Actuacion {
 		long identificacion = -1;
 		int numero_Secuencia = -1;
 		int duracion = -1;
-		System.out.print("introduzca la identificación");
+		System.out.print("introduzca la identificaciï¿½n");
 		identificacion = read.nextLong();
 		//bucle while para validaar la identificacion
 		boolean bool1 = false;
@@ -56,7 +54,7 @@ public class Actuacion {
 			}
 		}
 		
-		System.out.print("introduzca la duración de la actuación");
+		System.out.print("introduzca la duraciï¿½n de la actuaciï¿½n");
 		duracion = read.nextInt();
 		//bucle while para validar la duracion		
 		boolean  bool3 = false;
@@ -83,34 +81,27 @@ public class Actuacion {
 	public void setIdentificacion(long identificacion) {
 		this.identificacion = identificacion;
 	}
-	//getter de número de secuencia
+	//getter de nï¿½mero de secuencia
 	public int getNumero_Secuencia() {
 		return numero_Secuencia;
 	}
-	//setter de número de secuecia 
+	//setter de nï¿½mero de secuecia 
 	public void setNumero_Secuencia(int numero_secuencia) {
 		this.numero_Secuencia = numero_secuencia;
 	}
-	//getter de duración
+	//getter de duraciï¿½n
 	public int getDuracion() {
 		return duracion;
 	}
-	//setter de duracón
+	//setter de duracï¿½n
 	public void setDuracion(int duracion) {
 		this.duracion = duracion;
 	}
-	// Aquí se mete los Strings
+	// Aquï¿½ se mete los Strings
 	public String toString() {
 		return "Actuacion [Identificacion=" + identificacion + ", Numero_Secuencia=" + numero_Secuencia + ", Duracion="
 				+ duracion + "]";
 	}
 	
-	//getter de <Momento> 
-	public ArrayList<Momento> getTMomento() {
-        return momento;
-    }
-	// setter de <Momento>
-	public void setArtista(ArrayList<Momento> momento) {
-		this.momento = momento;
-	}
+	
 }

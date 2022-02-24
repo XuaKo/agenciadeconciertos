@@ -15,7 +15,7 @@ public class Concierto {
 	}
 
     //constructor con todos los atributos de la clase
-	protected Concierto(long identificador, LocalDate fechayHora) {
+	public Concierto(long identificador, LocalDate fechayHora) {
 		super();
 		identificado = identificador;
 		fechayhor = fechayHora;
