@@ -6,15 +6,15 @@ import java.time.LocalDate;
 import java.util.Scanner;
 ///*Aquí puse los atributos*
 public class Momento {
-	private long identificador;
+	private long idMomento;
 	private String descripcion;
 	private LocalDate fecha;
 	
 	
 	
 	//Aquí está el construcor de los atributos 
-	public Momento(long identificador, String descripcion, LocalDate fecha) {
-		this.identificador = identificador;
+	public Momento(long idMomento, String descripcion, LocalDate fecha) {
+		this.idMomento = idMomento;
 		this.descripcion = descripcion;
 		this.fecha = fecha;
 	}
@@ -25,17 +25,17 @@ public class Momento {
 	public static Momento nuevoMomento() {
 		Scanner read =  new Scanner(System.in);
 		Momento ret = new Momento();// se hace el ret para poder hacer un return
-		long identificador = -1;
+		long idMomento = -1;
 		String descripcion = "";
 		System.out.print("introuzca el identificador");
-		identificador = read.nextLong();
+		idMomento = read.nextLong();
 		//bucle while para validaar el identificador
 		boolean bool1 = false;
-		if(identificador < 0){
+		if(idMomento < 0){
 			while(!bool1) {
 				System.out.print("El identificador es incorrecto");
 				read.nextLong();
-				if(identificador > 0){
+				if(idMomento > 0){
 					bool1 = true;
 				}
 			}
@@ -54,12 +54,12 @@ public class Momento {
 		
 	
 	//getter de identificacdor
-	public long getIdentificador() {
-		return identificador;
+	public long getIdMomento() {
+		return idMomento;
 	}
 	//setter de identificador
-	public void setidentificador(long identificador) {
-		this.identificador = identificador;
+	public void setIdMomento(long idMomento) {
+		this.idMomento = idMomento;
 	}
 	//getter de descripcion
 	public String getDescripcion() {
@@ -79,7 +79,7 @@ public class Momento {
 	}
 	//Aquí esta el string
 	public String toString() {
-		return "Momento [Identificador=" + identificador + ", Descripcion=" + descripcion + ", Fecha=" + fecha + "]";
+		return "Momento [Identificador=" + idMomento + ", Descripcion=" + descripcion + ", Fecha=" + fecha + "]";
 	}
 
 }

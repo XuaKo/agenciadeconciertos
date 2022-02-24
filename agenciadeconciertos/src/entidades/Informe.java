@@ -3,28 +3,28 @@ package entidades;
 import java.util.Scanner;
 
 public class Informe {
-	private long id;
+	private long idInforme;
 	private String revision;
 
 	public Informe() {
 
 	}
 
-	public Informe(long id, String revision) {
-		this.id = id;
+	public Informe(long idInforme, String revision) {
+		this.idInforme = idInforme;
 		this.revision = revision;
 	}
 
 	public static Informe nuevoInforme() {
 		Informe ret = new Informe();
 		Scanner teclado = new Scanner(System.in);
-		long id = -1;
+		long idInforme = -1;
 		String revision = "";
 		boolean idvalido = false;
 		do {
 			System.out.print("Introduzca su identificador:");
-			id = teclado.nextLong();
-			if (id < 1) {
+			idInforme = teclado.nextLong();
+			if (idInforme < 1) {
 				System.out.println("El identificador ha de ser mayor que 0");
 				idvalido = false;
 			} else {
@@ -37,12 +37,12 @@ public class Informe {
 		return ret;
 	}
 
-	public long getId() {
-		return id;
+	public long getIdInforme() {
+		return idInforme;
 	}
 
-	public void setId(long id) {
-		this.id = id;
+	public void setIdInforme(long idInforme) {
+		this.idInforme = idInforme;
 	}
 
 	public String getRevision() {
@@ -54,7 +54,7 @@ public class Informe {
 	}
 
 	public String toString() {
-		return "Informe [id=" + id + ", Revision=" + revision + "]";
+		return "Informe [id=" + idInforme + ", Revision=" + revision + "]";
 	}
 
 }

@@ -5,13 +5,15 @@ import java.util.Scanner;
 
 ///*Aqu� puse los atributos*
 public class Actuacion {
-	private long identificacion;
+	private long idActuacion;
 	private int numero_Secuencia;
 	private int duracion;
 	
+
+
 //Aqu� est� el construcor de los atributos 
-	public Actuacion(long identificacion, int numero_Secuencia, int duracion){// con este ultimo atributo se esteblece relaci�n con la clase momento// 
-		this.identificacion = identificacion;
+	public Actuacion(long idActuacion, int numero_Secuencia, int duracion){// con este ultimo atributo se esteblece relaci�n con la clase momento// 
+		this.idActuacion = idActuacion;
 		this.numero_Secuencia = numero_Secuencia;
 		this.duracion = duracion;
 	}
@@ -23,18 +25,23 @@ public class Actuacion {
 	public static Actuacion nuevaActuacion() {
 		Actuacion ret = new Actuacion();// se hace el ret para poder hacer un return
 		Scanner read = new Scanner(System.in);
-		long identificacion = -1;
+		long idActuacion = -1;
 		int numero_Secuencia = -1;
 		int duracion = -1;
+
 		System.out.print("introduzca la identificaci�n");
-		identificacion = read.nextLong();
+		idActuacion = read.nextLong();
+
+		System.out.print("introduzca la identificaci�n");
+		idActuacion = read.nextLong();
+
 		//bucle while para validaar la identificacion
 		boolean bool1 = false;
-		if (identificacion <0) {
+		if (idActuacion <0) {
 			while(!bool1) {
 				System.out.print("identificaion incorrecta");
-				identificacion = read.nextLong();
-				if (identificacion > 1) {
+				idActuacion = read.nextLong();
+				if (idActuacion > 1) {
 					bool1 = true;
 				}
 			}
@@ -74,12 +81,12 @@ public class Actuacion {
 		
 	
 	//getter de identificacion
-	public long getIdentificacion() {
-		return identificacion;
+	public long getIdActuacion() {
+		return idActuacion;
 	}
 	//setter de identificacion
-	public void setIdentificacion(long identificacion) {
-		this.identificacion = identificacion;
+	public void setIdActuacion(long idActuacion) {
+		this.idActuacion = idActuacion;
 	}
 	//getter de n�mero de secuencia
 	public int getNumero_Secuencia() {
@@ -99,7 +106,7 @@ public class Actuacion {
 	}
 	// Aqu� se mete los Strings
 	public String toString() {
-		return "Actuacion [Identificacion=" + identificacion + ", Numero_Secuencia=" + numero_Secuencia + ", Duracion="
+		return "Actuacion [Identificacion=" + idActuacion + ", Numero_Secuencia=" + numero_Secuencia + ", Duracion="
 				+ duracion + "]";
 	}
 	

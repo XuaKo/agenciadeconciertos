@@ -1,22 +1,22 @@
 package entidades;
 
 public class Entrada {
-	private long Identificador;
+	private long idEntrada;
 	private String Precio_Euro;
 	private boolean Vip = false;
 
-	public Entrada(long identificador, String precio_Euro, boolean vip) {
-		Identificador = identificador;
-		Precio_Euro = precio_Euro;
-		Vip = vip;
+	public Entrada(long idEntrada, String precio_Euro, boolean vip) {
+		this.idEntrada = idEntrada;
+		this.Precio_Euro = precio_Euro;
+		this.Vip = vip;
 	}
 
-	public long getIdentificador() {
-		return Identificador;
+	public long getIdEntrada() {
+		return idEntrada;
 	}
 
-	public void setIdentificador(long identificador) {
-		Identificador = identificador;
+	public void setIdEntrada(long idEntrada) {
+		this.idEntrada = idEntrada;
 	}
 
 	public String getPrecio_Euro() {
@@ -36,7 +36,7 @@ public class Entrada {
 	}
 
 	public String toString() {
-		return "Entrada [Identificador=" + Identificador + ", Precio_Euro=" + Precio_Euro + ", Vip=" + Vip + "]";
+		return "Entrada [Identificador=" + idEntrada + ", Precio_Euro=" + Precio_Euro + ", Vip=" + Vip + "]";
 	}
 
 }

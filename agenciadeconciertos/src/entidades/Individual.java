@@ -7,8 +7,8 @@ public class Individual extends Concierto {
 	protected Individual() {
 	}
 
-	protected Individual(long identificador, LocalDate fechayHora) {
-		super(identificador, fechayHora);
+	protected Individual(long idConcierto, LocalDate fechayHora) {
+		super(idConcierto, fechayHora);
 	}
 
 	public String toString() {
