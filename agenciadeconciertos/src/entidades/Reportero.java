@@ -1,22 +1,34 @@
 package entidades;
 
 import java.util.Scanner;
-//autor Germán
+//autor Germï¿½n
 
-///*Aquí puse los atributos*
+///*Aquï¿½ puse los atributos*
 public class Reportero {
 	private String nombreyApellidos;
 	private String nif;
 	private int telefono;
+	
+	//autor de la conexion:Gabriel
+	private long[]idMomento;
+	
+    //getters y setters del array de la conexion entre clases
+	public long[] getIdMomento() {
+		return idMomento;
+	}
 
-	// Aquí está el construcor de los atributos
+	public void setIdMomento(long[] idMomento) {
+		this.idMomento = idMomento;
+	}
+
+	// Aquï¿½ estï¿½ el construcor de los atributos
 	public Reportero(String nombreyApellidos, String nif, int telefono) {
 		this.nombreyApellidos = nombreyApellidos;
 		this.nif = nif;
 		this.telefono = telefono;
 	}
 
-	// Aquí está el construcor de los Reportero
+	// Aquï¿½ estï¿½ el construcor de los Reportero
 	public Reportero() {
 	}
 
@@ -71,7 +83,7 @@ public class Reportero {
 		this.telefono = telefono;
 	}
 
-	// Aqui está los strings
+	// Aqui estï¿½ los strings
 	public String toString() {
 		return "Reportero [NombreyApellidos=" + nombreyApellidos + ", NIF=" + nif + ", Telefono=" + telefono + "]";
 	}

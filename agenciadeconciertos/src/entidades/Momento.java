@@ -1,18 +1,17 @@
 package entidades;
-//autor Germán
+//autor Germï¿½n
 
 
 import java.time.LocalDate;
 import java.util.Scanner;
-///*Aquí puse los atributos*
+///*Aquï¿½ puse los atributos*
 public class Momento {
 	private long idMomento;
 	private String descripcion;
 	private LocalDate fecha;
 	
 	
-	
-	//Aquí está el construcor de los atributos 
+	//Aquï¿½ estï¿½ el construcor de los atributos 
 	public Momento(long idMomento, String descripcion, LocalDate fecha) {
 		this.idMomento = idMomento;
 		this.descripcion = descripcion;
@@ -77,7 +76,7 @@ public class Momento {
 	public void setFecha(LocalDate fecha) {
 		this.fecha = fecha;
 	}
-	//Aquí esta el string
+	//Aquï¿½ esta el string
 	public String toString() {
 		return "Momento [Identificador=" + idMomento + ", Descripcion=" + descripcion + ", Fecha=" + fecha + "]";
 	}
