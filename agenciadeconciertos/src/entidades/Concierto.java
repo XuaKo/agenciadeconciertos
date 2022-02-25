@@ -89,6 +89,7 @@ public class Concierto {
 				e=new FileWriter(f,false);
 				escritor=new PrintWriter(e);
 				for(Concierto c:Datos.conciertos) {
+					//uso del metodo data que es lo que sera escrito en el fichero 
 					escritor.println(c.Data());
 				}
 			}finally {
