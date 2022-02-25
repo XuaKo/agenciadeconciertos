@@ -4,10 +4,10 @@ import java.time.LocalDate;
 
 public class Individual extends Concierto {
 
-	protected Individual() {
+	public Individual() {
 	}
 
-	protected Individual(long idConcierto, LocalDate fechayHora) {
+	public Individual(long idConcierto, LocalDate fechayHora) {
 		super(idConcierto, fechayHora);
 	}
 

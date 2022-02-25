@@ -4,12 +4,12 @@ import java.time.LocalDate;
 
 public class Colaboracion extends Concierto {
 
-	protected Colaboracion() {
+	public Colaboracion() {
 		
 
 	}
-
-	protected Colaboracion(long identificador, LocalDate fechayHora) {
+  // quien tenia esta clase como protected
+	public Colaboracion(long identificador, LocalDate fechayHora) {
 		super(identificador, fechayHora);
 
 	}
