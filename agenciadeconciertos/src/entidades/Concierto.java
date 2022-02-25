@@ -10,6 +10,10 @@ public class Concierto {
 	protected long idConcierto;
 	protected LocalDate fechayhor;
 	
+	
+	//conexion con Reportero
+	public Reportero reporteroConcierto;
+	
     //constructor por defecto
 	public Concierto() {
 	}

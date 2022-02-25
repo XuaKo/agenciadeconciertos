@@ -18,14 +18,26 @@ public class Reportero {
 	//declaramos un arraylist que tendra en su interior objetos de tipo Momento, con el que hay una relacion de 1:N por lo cual un reportero
 	//puede tener muchos momentos
 	public ArrayList<Momento> momentos= new ArrayList<Momento>();
+	//conexion con conciertos 1:N ya que un reportero documenta varios conciertos
+	public ArrayList<Concierto> conciertos=new ArrayList<Concierto>();
 	
-    //getters y setters del arraylist
+    //getters y setters del arraylist Momento
 	public ArrayList<Momento> getMomentos() {
 		return momentos;
 	}
 
+	
+
 	public void setMomentos(ArrayList<Momento> momentos) {
 		this.momentos = momentos;
+	}
+	//getters setters de conciertos
+	public ArrayList<Concierto> getConciertos() {
+		return conciertos;
+	}
+
+	public void setConciertos(ArrayList<Concierto> conciertos) {
+		this.conciertos = conciertos;
 	}
 
 	// Aqu� est� el construcor de los atributos
