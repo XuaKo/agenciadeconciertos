@@ -1,7 +1,7 @@
 package entidades;
 
 import java.time.LocalDate;
-
+import java.util.ArrayList;
 import java.util.Scanner;
 
 import utils.Utiles;
@@ -11,9 +11,12 @@ public class Gira {
 	private String nombreGira;
 	private LocalDate fechaApertura;
 	private LocalDate fechaCierre;
+	
+	//conexion con concierto (segun el diagrama de clases deberia ser al reves,pero la logica me dice que un objeto gira puede tener una lista de 
+	//conciertos,y que un concierto pertenece a una sola gira
+	ArrayList<Concierto>conciertos=new ArrayList<Concierto>();
 
 	public Gira() {
-
 	}
 
 	public Gira(long idGira, String nombreGira, LocalDate fechaApertura, LocalDate fechaCierre) {

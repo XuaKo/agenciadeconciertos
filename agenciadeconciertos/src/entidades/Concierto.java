@@ -1,8 +1,13 @@
 package entidades;
 
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.time.LocalDate;
 import java.util.Scanner;
 
+import utils.Datos;
 import utils.Utiles;
 
 public class Concierto {
@@ -13,6 +18,8 @@ public class Concierto {
 	
 	//conexion con Reportero
 	public Reportero reporteroConcierto;
+	//conexion con Gira
+	public Gira Giraconciertos;
 	
     //constructor por defecto
 	public Concierto() {
@@ -61,6 +68,44 @@ public class Concierto {
 			return ret;
 		
 	}
+		
+		
+		//metodo data para exportar los datos de un Concierto de forma ordenanda en un string 
+		//y los presenta como : <Concierto.idconcierto> "|" <Concierto.fechahora>
+		//es un metodo corto pero son los atributos con los que cuenta esta clase
+		public String Data(){
+			return ""+this.idConcierto+"|"+this.fechayhor;
+		}
+		
+		private static void exportarConcierto(Concierto[]concierto) {
+			//fichero imaginado
+			String path ="Concierto.txt";
+			File f=new File(path);
+		 	FileWriter e=null;
+		 	PrintWriter escritor=null;
+		 	
+		 	try {
+		 		try {
+				e=new FileWriter(f,false);
+				escritor=new PrintWriter(e);
+				for(Concierto c:Datos.conciertos) {
+					escritor.println(c.Data());
+				}
+			}finally {
+				if (e!=null){
+					e.close();
+				}
+				if(escritor != null) {
+					escritor.close();
+				}
+			}
+		 	
+		 	}catch (IOException e1) {
+				e1.printStackTrace();
+			}
+			
+					
+		}
 	
    
 	
