@@ -10,6 +10,8 @@ public class Momento {
 	private String descripcion;
 	private LocalDate fecha;
 	
+	//conexion con clase Reportero declarando un objeto de tipo reportero ya que un momento se asocia con solo un reportero 
+	public Reportero reporteroMomento;
 	
 	//Aqu� est� el construcor de los atributos 
 	public Momento(long idMomento, String descripcion, LocalDate fecha) {

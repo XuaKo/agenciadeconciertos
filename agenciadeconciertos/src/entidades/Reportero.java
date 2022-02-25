@@ -1,5 +1,8 @@
 package entidades;
 
+
+//importamos la clase arraylist para poder implementarla
+import java.util.ArrayList;
 import java.util.Scanner;
 //autor Germ�n
 
@@ -9,16 +12,20 @@ public class Reportero {
 	private String nif;
 	private int telefono;
 	
-	//autor de la conexion:Gabriel
-	private long[]idMomento;
+	//autor de la conexion con momento:Gabriel importante:no se si es correcta pero adjunto el link de donde saque la informacion para
+	//realizar la conexion link:https://www.youtube.com/watch?v=BGStNPa0qRk&t=7s
 	
-    //getters y setters del array de la conexion entre clases
-	public long[] getIdMomento() {
-		return idMomento;
+	//declaramos un arraylist que tendra en su interior objetos de tipo Momento, con el que hay una relacion de 1:N por lo cual un reportero
+	//puede tener muchos momentos
+	public ArrayList<Momento> momentos= new ArrayList<Momento>();
+	
+    //getters y setters del arraylist
+	public ArrayList<Momento> getMomentos() {
+		return momentos;
 	}
 
-	public void setIdMomento(long[] idMomento) {
-		this.idMomento = idMomento;
+	public void setMomentos(ArrayList<Momento> momentos) {
+		this.momentos = momentos;
 	}
 
 	// Aqu� est� el construcor de los atributos
