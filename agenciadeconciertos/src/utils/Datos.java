@@ -58,6 +58,8 @@ public class Datos {
 	
 	//no tengo muy claro si con la clase que extiende crear un objeto nuevo con los datos de la super clase
 	//o meter los conciertos como colaboraciones asi que de momento queda vacio
+	
+	//duda resuelta y array rellenado
 	public static Colaboracion[]colaboraciones={
 			   new Colaboracion(1,LocalDate.parse("20/03/1985", DateTimeFormatter.ofPattern("dd/MM/yyyy"))),
 			   new Colaboracion(2,LocalDate.parse("02/08/1999", DateTimeFormatter.ofPattern("dd/MM/yyyy"))),
@@ -124,29 +126,60 @@ public class Datos {
 			new Individual(10,LocalDate.parse("20/06/2001", DateTimeFormatter.ofPattern("dd/MM/yyyy"))),
 	};
 	
+	//puse nombres aleatorios por que me aburro  y no es importante
 	public static Informe[]informes= {
-			new Informe(1,"hay que llevar mas maquinas de humo"),new Informe(2,"hay que llevar mas maquinas de humo"),
-			new Informe(3,"hay que llevar mas maquinas de humo"),new Informe(4,"hay que llevar mas maquinas de humo"),
-			new Informe(5,"hay que llevar mas maquinas de humo"),new Informe(6,"hay que llevar mas maquinas de humo"),
-			new Informe(7,"hay que llevar mas maquinas de humo"),new Informe(8,"hay que llevar mas maquinas de humo"),
-			new Informe(9,"hay que llevar mas maquinas de humo"),new Informe(10,"hay que llevar mas maquinas de humo"),
-			
-			
+			new Informe(1,"hay que llevar mas maquinas de humo"),new Informe(2,"jerico"),
+			new Informe(3,"hay que llevar mas rwtbv de humo"),new Informe(4,"hay que llevar mas maquinas de humo"),
+			new Informe(5,"hay  de humo"),new Informe(6,"hay que llevar mas maquinas de humo"),
+			new Informe(7,"compra jamon"),new Informe(8,"bueno buen bueno bueno vaya actuadon"),
+			new Informe(9,"aprender a cantar"),new Informe(10,"hay que llevar mas maquinas de humo"),	
 	};
 	
 	public static Momento[]momentos= {
-			
+			new Momento(1,"dfbebv",LocalDate.parse("20/08/2005", DateTimeFormatter.ofPattern("dd/MM/yyyy"))),
+			new Momento(2,"dfbebv",LocalDate.parse("18/02/2000", DateTimeFormatter.ofPattern("dd/MM/yyyy"))),
+			new Momento(3,"dfqrefeqgvbebv",LocalDate.parse("08/08/2010", DateTimeFormatter.ofPattern("dd/MM/yyyy"))),
+			new Momento(4,"dfbebv",LocalDate.parse("06/08/2000", DateTimeFormatter.ofPattern("dd/MM/yyyy"))),
+			new Momento(5,"dfbqrfqrvqebv",LocalDate.parse("04/08/2000", DateTimeFormatter.ofPattern("dd/MM/yyyy"))),
+			new Momento(6,"dfbebv",LocalDate.parse("22/08/2012", DateTimeFormatter.ofPattern("dd/MM/yyyy"))),
+			new Momento(7,"rgbrw",LocalDate.parse("09/08/2000", DateTimeFormatter.ofPattern("dd/MM/yyyy"))),
+			new Momento(8,"dfbebv",LocalDate.parse("03/08/2000", DateTimeFormatter.ofPattern("dd/MM/yyyy"))),
+			new Momento(9,"qveqervqeqv",LocalDate.parse("31/12/2020", DateTimeFormatter.ofPattern("dd/MM/yyyy"))),
+			new Momento(10,"dfbvqrevqerghyj46jebv",LocalDate.parse("20/06/2006", DateTimeFormatter.ofPattern("dd/MM/yyyy"))),	
 	};
 	
 	public static Reportero[]reporteros= {
-			
+			new Reportero("Antonio Domingez","51498665S",77664251),new Reportero("Bolson Vilvo","51498665Q",99885432),
+			new Reportero("Miles Morales","51498665L",998674445),new Reportero("Maria Domingez","548446651U",648442569),
+			new Reportero("Derek mark","587452165Q",259887654),new Reportero("Estefania Domingez","51498665X",698569246),
+			new Reportero("Jessie Domingez","984657421P",336659471),new Reportero("Willian Mendez","51498665O",259887654),
+			new Reportero("Pedro Domingez","51498665N",325686447),new Reportero("Antonio Rodrigez","365489754E",452165558),
 	};
 	
 	public static Reserva[]reservas= {
-			
+			new Reserva(1,LocalDate.parse("01/02/2004", DateTimeFormatter.ofPattern("dd/MM/yyyy")),true),
+			new Reserva(2,LocalDate.parse("18/05/2006", DateTimeFormatter.ofPattern("dd/MM/yyyy")),false),
+			new Reserva(3,LocalDate.parse("11/04/2006", DateTimeFormatter.ofPattern("dd/MM/yyyy")),true),
+			new Reserva(4,LocalDate.parse("25/09/2006", DateTimeFormatter.ofPattern("dd/MM/yyyy")),false),
+			new Reserva(5,LocalDate.parse("08/04/2006", DateTimeFormatter.ofPattern("dd/MM/yyyy")),true),
+			new Reserva(6,LocalDate.parse("09/07/2006", DateTimeFormatter.ofPattern("dd/MM/yyyy")),false),
+			new Reserva(7,LocalDate.parse("07/09/2006", DateTimeFormatter.ofPattern("dd/MM/yyyy")),true),
+			new Reserva(8,LocalDate.parse("06/03/2006", DateTimeFormatter.ofPattern("dd/MM/yyyy")),true),
+			new Reserva(9,LocalDate.parse("03/01/2006", DateTimeFormatter.ofPattern("dd/MM/yyyy")),false),
+			new Reserva(10,LocalDate.parse("23/06/2006", DateTimeFormatter.ofPattern("dd/MM/yyyy")),false),		
 	};
 	
 	public static Usuario[]usuarios= {
+			new Usuario(1,"Antonio Hernandez","ejemplo@gmail.com","25447798E",false),
+			new Usuario(2,"Antonio Hernandez","ejemplo2@gmail.com","99856244E",true),
+			new Usuario(3,"Antonio Hernandez","ejemplo3@gmail.com","12547854Q",false),
+			new Usuario(4,"Antonio Hernandez","ejemplo4@gmail.com","25444987S",true),
+			new Usuario(5,"Antonio Hernandez","ejemplo5@gmail.com","25444468K",false),
+			new Usuario(6,"Antonio Hernandez","ejemplo6@gmail.com","89878854D",false),
+			new Usuario(7,"Antonio Hernandez","ejemplo7@gmail.com","9877741X",false),
+			new Usuario(8,"Antonio Hernandez","ejemplo8@gmail.com","12547854Q",true),
+			new Usuario(9,"Antonio Hernandez","ejemplo9@gmail.com","12547854Q",true),
+			new Usuario(10,"Antonio Hernandez","ejemplo10@gmail.com","12547854Q",true),
 			
 	};
 			
